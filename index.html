@@ -263,7 +263,7 @@
         }
 
         .app-details.open {
-            max-height: 800px;
+            max-height: 1200px;
             margin-top: 1rem;
         }
 
@@ -383,10 +383,24 @@
                 </div>
             </div>
             
-            <div class="app">
+            <div class="app featured" onclick="toggleDetails('chozetsukeiba')">
                 <p class="app-name">超絶競馬</p>
                 <p class="app-name-en">Extreme Horse Racing</p>
-                <span class="app-status">In Development</span>
+                <span class="app-status released">Released</span>
+                <p class="view-more" id="chozetsukeiba-toggle">→ 詳細を見る</p>
+                <div class="app-details" id="chozetsukeiba">
+                    <video
+                        src="https://daisotu-studio.com/output_pv_small.mp4"
+                        autoplay
+                        muted
+                        loop
+                        playsinline
+                        style="width:100%; border-radius:8px; margin-bottom:1rem;"
+                    ></video>
+                    <div class="store-links">
+                        <a href="https://apps.apple.com/jp/app/%E8%B6%85%E7%B5%B6%E7%AB%B6%E9%A6%AC/id6760916156" target="_blank" class="store-link appstore" onclick="event.stopPropagation()">App Store</a>
+                    </div>
+                </div>
             </div>
         </div>
 
